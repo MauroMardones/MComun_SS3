@@ -1,0 +1,2 @@
+1 settle_month is less than spawn_month, so logical age at settlement calculated to be: 1  for settle_time 1.  Does not match read value of 0 are you sure? 
+2 CV of growth parameters cannot be time-varying

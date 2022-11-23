@@ -1,0 +1,12 @@
+#V3.30.14.00-safe;_2019_07_19;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_12.0
+#Stock Synthesis (SS) is a work of the U.S. Government and is not subject to copyright protection in the United States.
+#Foreign copyrights may apply. See copyright.txt for more information.
+Tue Jul 26 00:47:59 2022
+
+fishing fleet: 1 surveytime read as: 1 normally is -1 for fishing fleet; can override for indiv. obs. using 1000+month
+settle_month is less than spawn_month, so logical age at settlement calculated to be: 1  for settle_time 1.  Does not match read value of 0 are you sure? 
+Block:1 1 ends in: 2021 after retroyr+1:  2017
+Final gradient: 3.43992e+08 is larger than final_conv: 0.001
+ warning: poor convergence in Btarget search 7.02475 75.3373
+ N warnings: 4
+Number_of_active_parameters_on_or_near_bounds: 1

@@ -1,0 +1,47 @@
+---
+title: "Workflow SS3 M. Común Stock Assessment 2022"
+author: "Mauricio Mardones I."
+date: '2022-06-15'
+output: pdf_document
+toc: true
+toc_depht: 2
+
+---
+
+# Descripción y objetivo del documento
+
+Este documento contiene el flujo de analisis y modelación de los distintos escenarios de Brama australis Reineta para la zona centro sur de CHile.
+
+Se realiza una modelación con la plataforma SS3 (Methot & Wetel, 2013) (V.3.30.19) y sus outputs leídos con la librería "r4ss" (Taylor et al., 2020)
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      message = FALSE,
+                      include = FALSE)
+```
+
+Instalación de las librerias necesarias
+
+```{r message=FALSE}
+# en caso no se tengan las dependencias
+# install.packages("devtools")
+# devtools::install_github("r4ss/r4ss", ref="development")
+# install.packages("caTools")
+# library("caTools")
+# # install.packages("r4ss")
+library(r4ss)
+library(here)
+#remotes::install_github("PIFSCstockassessments/ss3diags")
+library(ss3diags)
+```
+Correr SS3 versión 3.30.19 release.
+
+Corro escenario 1 Full data
+```{r message=FALSE, warning=FALSE, include=FALSE}
+dir1<-here("~/IFOP/CBA/MCOMUN/SA/2021")
+setwd(dir1)
+#shell(cmd="ss") # run SS para windows
+system('./ss_osx') 
+```
