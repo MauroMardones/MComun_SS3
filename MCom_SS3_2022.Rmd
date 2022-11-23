@@ -21,10 +21,6 @@ header-includes:
 - \rfoot[]{\thepage}
 ---
 
-```{=tex}
-\fontsize{12}{20}
-\selectfont
-```
 \pagebreak
 
 # 1. ANTECEDENTES
